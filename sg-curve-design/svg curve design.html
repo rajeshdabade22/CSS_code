@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Design - curvy shape</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+   body{
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+ header{
+     background: url(blur.jpg);
+     background-size: cover;
+     position: relative;
+     height: 650px; 
+     overflow: hidden;
+  }
+  header::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    height: 100px;
+    background: url(svg.png);
+  }
+  .header-content h1{
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: #ffffff;
+  }
+  .header-content p{
+      font-size: 20px;
+      text-transform: capitalize;
+      color: #ffffff;
+      letter-spacing: 1px;
+      margin: 25px 0 25px;
+      
+  }
+.theme-btn{
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    min-width: 100px;
+
+}
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="header-content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div style="margin-top: 240px;">
+                        <h1>Make business with Smile </h1>
+                      <p>
+                          Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Vitae, 
+                          officiis aliquid. Magni dolore, iste odit.
+                      </p>
+                      <a href="" class="theme-btn">Read More</a>
+                      <a href="" class="theme-btn">Start now</a>
+                      <div class="go-about"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="margin-top: 130px;"></div>
+                    <img src="blog.jpg" class="img-responsive" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+</body>
+</html>
